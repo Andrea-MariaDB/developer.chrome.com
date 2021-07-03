@@ -99,7 +99,7 @@ width="800", height="365" %}
 
 As with a real-life pyramid, each level provides a necessarily-solid foundation for the level above.
 
-### Reliability
+## Reliability
 
 {% Img
 src="image/ZDZVuXt6QqfXtxkpXcPGfnygYjd2/xzpN0AsbF2yocQSDXk7v.jpg",
@@ -180,7 +180,7 @@ a whole lot easier if the code is easy to understand,
 and designed in a way that minimizes the likelihood of bugs.
 We'll have a lot more to say about RenderingNG's software design in subsequent blog posts.
 
-### Scalable performance
+## Scalable performance
 
 Achieving great performance—across the dimensions of speed, memory, and power use—
 is the next most important aspect of RenderingNG.
@@ -276,7 +276,7 @@ the very first web API that allows JavaScript (or WebAssembly!)
 to render a single web page document from multiple threads.
 - [Container queries](https://web.dev/new-responsive/): allows a single component to responsively lay itself out,
 unblocking a whole universe of plug-and-play components (currently an experimental implementation).
-- [Origin isolation](https://web.dev/why-coop-coep/): allows sites to opt into more performance isolation between iframes.
+- [Origin isolation](https://web.dev/origin-agent-cluster/): allows sites to opt into more performance isolation between iframes.
 - Off-main-thread [paint worklets](https://web.dev/houdini-how/): gives developers a way to extend how elements are painted,
 with code that runs on the compositor thread.
 
@@ -315,6 +315,7 @@ and using less memory without sacrificing performance. It began in 2014 and will
     <tr>
       <th>Year</th>
       <th>Progress</th>
+    </tr>
   </thead>
   <tbody>
     <tr>
@@ -352,6 +353,7 @@ and is planned to finish this year.
     <tr>
       <th>Year</th>
       <th>Progress</th>
+    </tr>
   </thead>
   <tbody>
     <tr>
@@ -389,6 +391,7 @@ It began in 2014 and completed in 2020.
     <tr>
       <th>Year</th>
       <th>Progress</th>
+    </tr>
   </thead>
   <tbody>
     <tr>
@@ -429,6 +432,7 @@ and image decoding off of the main thread. It began in 2011 and is ongoing.
     <tr>
       <th>Year</th>
       <th>Progress</th>
+    </tr>
   </thead>
   <tbody>
     <tr>
@@ -475,6 +479,7 @@ such as unblocking Site Isolation and decoupling the rendering pipeline from bro
     <tr>
       <th>Year</th>
       <th>Progress</th>
+    </tr>
   </thead>
   <tbody>
     <tr>
@@ -523,6 +528,7 @@ It began in 2015 and will finish in 2021.
     <tr>
       <th>Year</th>
       <th>Progress</th>
+    </tr>
   </thead>
   <tbody>
     <tr>
@@ -541,6 +547,57 @@ It began in 2015 and will finish in 2021.
   </tbody>
 </table>
 
+### VideoNG
+
+A long-term effort to provide provide efficient, reliable, and high quality video playback on the web.
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Progress</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2014</td>
+      <td>Introduced a Mojo-based rendering framework.</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>Shipped <a href="https://docs.google.com/document/d/1oUb_ap0TAa1sDci0wEQ6BEzd_lB7Eghv93NXyZ3952E/preview">Project Butter</a> and video overlays for smoother video rendering.</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>Shipped unified Android and desktop decoding and rendering pipelines.</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>Shipped HDR and color-corrected video rendering.</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>Shipped Mojo-based video decoding pipeline.</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>Shipped Surface-based video rendering pipeline.</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>Shipped <a href="https://en.wikipedia.org/wiki/4K_resolution">4K</a> protected content rendering support on ChromeOS.</td>
+    </tr>
+  </tbody>
+</table>
+
+Definitions of terms in the chart above:
+
+Mojo
+: A next-generation IPC subsystem for Chromium.
+
+Surface 
+: A concept that is part of the Viz project design.
+
 ## Conclusion
 
 I couldn't be more excited about the rate of improvement of rendering on the web and Chromium.
@@ -553,3 +610,5 @@ how it came to be, and how it works.
 _Devices photo by
 [Eirik Solheim](https://unsplash.com/@eirikso?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on
 [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
+
+Illustrations by Una Kravets.
